@@ -33,13 +33,13 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/Rahul-Kumar-Singh",
+    href: "https://github.com/Rahul207158",
     gradient: "from-gray-600 to-gray-800",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/rahul-kumar-singh-b0b0b0b0/",
+    href: "https://www.linkedin.com/in/rahul-kumar-singh-3a54rt",
     gradient: "from-blue-600 to-blue-800",
   },
   {

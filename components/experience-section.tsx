@@ -6,11 +6,11 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Building } from "lucide-react"
 
 const experience = {
-  title: "Software Developer Intern",
-  company: "Leading Tech Company", // Company name not specified in resume
+  title: "Software Engineer",
+  company: "TATA AIG", // Company name not specified in resume
   location: "India", // Location not specified in resume
-  duration: "Summer 2023", // Duration not specified, using a placeholder
-  type: "Internship",
+  duration: "June 2024", // Duration not specified, using a placeholder
+  type: "Full Time",
   achievements: [
     "Led development of a centralized CKYC microservice in Node.js on AWS ECS, processing 1M+ KYC records in 2 months.",
     "Designed a dynamic engine rule flow, enabling rapid compliance updates for IRDAI/business with minimal frontend changes.",

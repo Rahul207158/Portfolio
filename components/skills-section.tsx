@@ -25,9 +25,9 @@ const skillCategories = [
     gradient: "from-blue-500 to-purple-500",
     skills: [
       { name: "JavaScript", level: 90, icon: Code },
-      { name: "Python", level: 88, icon: Code },
-      { name: "Golang", level: 80, icon: Code },
-      { name: "C++", level: 85, icon: Code },
+      { name: "Python", level: 90, icon: Code },
+      { name: "Golang", level: 70, icon: Code },
+      { name: "C++", level: 90, icon: Code },
       { name: "SQL", level: 80, icon: Database },
     ],
   },
@@ -49,7 +49,7 @@ const skillCategories = [
     icon: Cloud,
     gradient: "from-green-500 to-blue-500",
     skills: [
-      { name: "AWS (ECS, S3, Lambda, Glue, EventBridge)", level: 85, icon: Cloud },
+      { name: "AWS (ECS, S3, Lambda, Glue, EventBridge)", level: 90, icon: Cloud },
       { name: "Docker", level: 78, icon: Box },
       { name: "Git/GitHub", level: 90, icon: GitBranch },
       { name: "GitHub Actions", level: 75, icon: Workflow },

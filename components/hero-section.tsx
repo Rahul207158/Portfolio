@@ -98,7 +98,7 @@ export function HeroSection() {
                 variant="outline"
                 size="icon"
                 className="border-white/20 text-white hover:bg-white/10 bg-transparent"
-                onClick={() => window.open("https://github.com/Rahul-Kumar-Singh", "_blank")}
+                onClick={() => window.open("https://github.com/Rahul207158", "_blank")}
               >
                 <Github className="w-5 h-5" />
               </Button>
@@ -106,7 +106,7 @@ export function HeroSection() {
                 variant="outline"
                 size="icon"
                 className="border-white/20 text-white hover:bg-white/10 bg-transparent"
-                onClick={() => window.open("https://www.linkedin.com/in/rahul-kumar-singh-b0b0b0b0/", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/rahul-kumar-singh-3a54rt", "_blank")}
               >
                 <Linkedin className="w-5 h-5" />
               </Button>
