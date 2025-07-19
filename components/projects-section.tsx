@@ -180,7 +180,7 @@ export function ProjectsSection() {
           <Button
             variant="outline"
             className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white bg-transparent"
-            onClick={() => window.open("https://github.com/Rahul-Kumar-Singh", "_blank")} // Placeholder
+            onClick={() => window.open("https://github.com/Rahul207158", "_blank")} // Placeholder
           >
             <Github className="w-4 h-4 mr-2" />
             View All Projects on GitHub

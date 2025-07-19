@@ -76,9 +76,6 @@ const softSkills = [
   "Team Collaboration",
   "Leadership",
   "Communication",
-  "Agile Methodology",
-  "Code Review",
-  "Competitive Programming",
 ]
 
 const concepts = [
