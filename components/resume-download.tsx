@@ -15,38 +15,45 @@ export function ResumeDownload({ variant = "outline", size = "sm", className = "
   const [isDownloading, setIsDownloading] = useState(false)
   const { toast } = useToast()
 
-  const GOOGLE_DRIVE_FILE_ID = "1hK3Id4tAqJucXy1OqPaUB8Y7crhzV0I6";
+  const GOOGLE_DRIVE_FILE_ID = "1cntKMdqsb9J79ITHQdYf1E-2oOfr3CYi";
   const GOOGLE_DRIVE_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${GOOGLE_DRIVE_FILE_ID}`;
   const GOOGLE_DRIVE_VIEW_URL = `https://drive.google.com/file/d/${GOOGLE_DRIVE_FILE_ID}/view?usp=share_link`;
 
   const handleDownload = async () => {
-    setIsDownloading(true)
-
+    setIsDownloading(true);
     try {
-      // First try direct download
-      const link = document.createElement("a")
-      link.href = GOOGLE_DRIVE_DOWNLOAD_URL
-      link.download = "Rahul_Kumar_Singh_Resume.pdf"
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
+      const response = await fetch(GOOGLE_DRIVE_DOWNLOAD_URL, { method: "HEAD" });
+      if (response.ok) {
+        // Proceed with download
+        const link = document.createElement("a");
+        link.href = GOOGLE_DRIVE_DOWNLOAD_URL;
+        link.download = "Rahul_Kumar_Singh_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
 
-      toast({
-        title: "Download started!",
-        description: "Your resume download has begun.",
-      })
+        toast({
+          title: "Download started!",
+          description: "Your resume download has begun.",
+        });
+      } else {
+        // Fallback to view link
+        window.open(GOOGLE_DRIVE_VIEW_URL, "_blank");
+        toast({
+          title: "Resume opened!",
+          description: "Resume opened in new tab. You can download it from there.",
+        });
+      }
     } catch (error) {
-      // Fallback to opening in new tab
-      window.open(GOOGLE_DRIVE_VIEW_URL, "_blank")
-
+      window.open(GOOGLE_DRIVE_VIEW_URL, "_blank");
       toast({
         title: "Resume opened!",
         description: "Resume opened in new tab. You can download it from there.",
-      })
+      });
     } finally {
-      setIsDownloading(false)
+      setIsDownloading(false);
     }
-  }
+  };
 
   return (
     <Button
@@ -68,5 +75,5 @@ export function ResumeDownload({ variant = "outline", size = "sm", className = "
         </>
       )}
     </Button>
-  )
+  );
 }

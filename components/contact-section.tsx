@@ -39,7 +39,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/rahul-kumar-singh-3a54rt",
+    href: "https://www.linkedin.com/in/rahul-kumar-singh-3657a1235",
     gradient: "from-blue-600 to-blue-800",
   },
   {
