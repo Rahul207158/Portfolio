@@ -15,14 +15,9 @@ export function ResumeDownload({ variant = "outline", size = "sm", className = "
   const [isDownloading, setIsDownloading] = useState(false)
   const { toast } = useToast()
 
-  // ✅ Replace this with your actual Google Drive File ID
-  const GOOGLE_DRIVE_FILE_ID = "https://drive.google.com/file/d/1hK3Id4tAqJucXy1OqPaUB8Y7crhzV0I6/view?usp=share_link" // Replace with actual ID
-
-  // ✅ Direct download URL (forces browser to download the file)
-  const GOOGLE_DRIVE_DOWNLOAD_URL = "https://drive.google.com/file/d/1hK3Id4tAqJucXy1OqPaUB8Y7crhzV0I6/view?usp=share_link" // Direct path to the resume file
-
-  // ✅ View in browser (opens Google Drive preview)
-  const GOOGLE_DRIVE_VIEW_URL = "https://drive.google.com/file/d/1hK3Id4tAqJucXy1OqPaUB8Y7crhzV0I6/view?usp=share_link" // Direct path to the resume file
+  const GOOGLE_DRIVE_FILE_ID = "1hK3Id4tAqJucXy1OqPaUB8Y7crhzV0I6";
+  const GOOGLE_DRIVE_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${GOOGLE_DRIVE_FILE_ID}`;
+  const GOOGLE_DRIVE_VIEW_URL = `https://drive.google.com/file/d/${GOOGLE_DRIVE_FILE_ID}/view?usp=share_link`;
 
   const handleDownload = async () => {
     setIsDownloading(true)
