@@ -71,7 +71,7 @@ export function Navigation() {
               variant="outline"
               size="sm"
               className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white bg-transparent"
-              onClick={() => window.open("/Rahul_Kumar_Singh_Resume.pdf", "_blank")}
+              onClick={() => window.open("https://drive.google.com/uc?export=download&id=1cntKMdqsb9J79ITHQdYf1E-2oOfr3CYi", "_blank")}
             >
               <Download className="w-4 h-4 mr-2" />
               Resume
@@ -113,7 +113,7 @@ export function Navigation() {
                 variant="outline"
                 size="sm"
                 className="w-full border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white bg-transparent"
-                onClick={() => window.open("/Rahul_Kumar_Singh_Resume.pdf", "_blank")}
+                onClick={() => window.open("https://drive.google.com/uc?export=download&id=1cntKMdqsb9J79ITHQdYf1E-2oOfr3CYi", "_blank")}
               >
                 <Download className="w-4 h-4 mr-2" />
                 Resume
